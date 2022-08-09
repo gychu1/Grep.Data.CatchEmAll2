@@ -1,38 +1,99 @@
 # Part 1
 ### a)
+grep "beed" forest/*.1 > captured/beedrill.txt
+grep "blas" forest/*.1 > captured/blastoise.txt
+grep "bulb" forest/*.1 > captured/bulbasaur.txt
+grep "butt" forest/*.1 > captured/butterfree.txt
+
+grep "izard" forest/*.2 > captured/charizard.txt
+grep "mander" forest/*.2 > captured/charmander.txt
+grep "meleon" forest/*.2 > captured/charmeleon.txt
 
 
+grep "ivys" forest/*.3 > captured/ivysaur.txt
+grep "jigg" forest/*.3 > captured/jigglypuff.txt
+grep "meow" forest/*.3 > captured/meowth.txt
+grep "pika" forest/*.3 > captured/pikachu.txt
+
+grep "psyd" forest/*.4 > captured/psyduck.txt
+grep "squi" forest/*.4 > captured/squirtle.txt
+grep "venu" forest/*.4 > captured/venusaur.txt
+grep "wart" forest/*.4 > captured/wartortle.txt
 
 
 ### b)
+grep "beed" forest/*.1 > captured/beedrill.txt
+grep "blas" forest/*.1 > captured/blastoise.txt
+grep "bulb" forest/*.1 > captured/bulbasaur.txt
+grep "butt" forest/*.1 > captured/butterfree.txt
 
+grep "izard" forest/*.2 > captured/charizard.txt
+grep "mander" forest/*.2 > captured/charmander.txt
+grep "meleon" forest/*.2 > captured/charmeleon.txt
+
+grep "ivys" forest/*.3 > captured/ivysaur.txt
+grep "jigg" forest/*.3 > captured/jigglypuff.txt
+grep "meow" forest/*.3 > captured/meowth.txt
+grep "pika" forest/*.3 > captured/pikachu.txt
+
+grep "psyd" forest/*.4 > captured/psyduck.txt
+grep "squi" forest/*.4 > captured/squirtle.txt
+grep "venu" forest/*.4 > captured/venusaur.txt
+grep "wart" forest/*.4 > captured/wartortle.txt
 
 
 ### c)
+filescan_00.1
+beedrill
+lastoise
+bulbasaur
+butterfree
 
+filescan_00.2
+charizard
+charmander
+charmeleon
 
+filescan_00.3
+grep "ivys" forest/*.3 > captured/ivysaur.txt
+grep "jigg" forest/*.3 > captured/jigglypuff.txt
+grep "meow" forest/*.3 > captured/meowth.txt
+grep "pika" forest/*.3 > captured/pikachu.txt
 
-
-
-
-
-
-
+filescan_00.4
+psyduck.txt
+squirtle.txt
+venusaur.txt
+wartortle.txt
 
 
 
 
 # Part 2
 ### a)
+16 including the instruction file.
 
-
-
-
+ls captured | wc -l
 
 
 ### b)
+pikachu, charizard, beedrill.
 
-
-
-
-
+find captured/ -type f -exec wc -l {} + | sort -rn
+     540 total
+      40 captured//pikachu.txt
+      40 captured//charizard.txt
+      40 captured//beedrill.txt
+      38 captured//butterfree.txt
+      38 captured//blastoise.txt
+      37 captured//wartortle.txt
+      37 captured//psyduck.txt
+      37 captured//charmeleon.txt
+      36 captured//charmander.txt
+      34 captured//squirtle.txt
+      34 captured//jigglypuff.txt
+      33 captured//meowth.txt
+      33 captured//ivysaur.txt
+      32 captured//venusaur.txt
+      30 captured//bulbasaur.txt
+       1 captured//instruction.txt
